@@ -1,5 +1,30 @@
 function Install-SteamCmd {
 
+    <#
+    .SYNOPSIS
+        Download, install, and update SteamCmd.
+    .DESCRIPTION
+        Download, install, and update SteamCmd.
+    .PARAMETER Path
+        The location where SteamCmd will be installed.
+    .PARAMETER Proxy
+        Specifies a proxy server for the request, rather than connecting directly to the Internet resource.
+    .PARAMETER ProxyCredential
+        Specifies a user account that has permission to use the proxy server that's specified by the Proxy parameter.
+    .NOTES
+        The actual SteamCmd.exe output is in the Verbose stream. Run the Cmdlet with -Verbose to see it.
+    .EXAMPLE
+        Install-AsaSteamCmd
+
+        Installs SteamCmd in the default location. The default location is "C:\Steam".
+    .EXAMPLE
+        Install-AsaSteamCmd -Path "C:\Program Files\SteamCmd"
+
+        Installs SteamCmd to Program Files instead of the default location
+    #>
+    
+    
+
     [CmdletBinding()]
 
     param (
