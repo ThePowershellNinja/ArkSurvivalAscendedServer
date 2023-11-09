@@ -1,7 +1,8 @@
+
 # Get all the public and private function definitions
 $publicFunctions = @(Get-ChildItem -Path $PSScriptRoot\PublicFunctions\*.ps1)
 $privateFunctions = @(Get-ChildItem -Path $PSScriptRoot\PrivateFunctions\*.ps1)
-
+Write-verbose Hello
 # Get Class definitions
 $classes = @(Get-ChildItem -Path $PSScriptRoot\Classes\*.ps1)
 
